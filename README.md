@@ -1,7 +1,4 @@
 <!DOCTYPE html>
-# sawsanmohamed.github.io
-my personal website
-
 <html lang="en-US" >
 <body>
 
