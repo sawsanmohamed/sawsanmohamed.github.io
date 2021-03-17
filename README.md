@@ -15,48 +15,36 @@ div.example {
   padding: 20px;
 }
 
-@media screen and (min-width: 601px) {
-  div.example {
-    font-size: 80px;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  div.example {
-    font-size: 30px;
-  }
-}
 </style>
 </head>
 <body>
 
 <div class="example">
-<h1>Sawsan Mohamed Kabaha</h1>
+<h1 style="font-size:10vw;">Sawsan Mohamed Kabaha</h1>
 
-<p1> <br/> Bachelor of Science in Computer Science | An-Najah National University, Nablus
+<p1 style="font-size:5vw;"> <br/> Bachelor of Science in Computer Science | An-Najah National University, Nablus
 2018–2022</p1>
 
-<p>
+<p style="font-size:5vw;">
 <a href="https://twitter.com/_sawsanmohamed">My Twitter </a>
 </p>
 
-<img src="https://raw.githubusercontent.com/sawsanmohamed/sawsanmohamed.github.io/main/sawsan.jpg"
- alt="me" class="responsive" width="200" height="200">
+<img src="sawsan.jpg" alt="me" class="responsive" width="200" height="200">
 
-<p> My education background: </p>
+<p style="font-size:5vw;"> My education background: </p>
 <ul>
   <li>An-Najah National University | Nablus,
   B.A in Computer Science | 2018-2022</li>
  <li> Bartaa high school | Computer Science </li>
 </ul>
 
-<p> My work experiences:</p>
-<ul>  
-  <li>1.Cashier at Zara | Haifa </li>
-  <li>2.Cashier at Fox Home </li>
+<p style="font-size:5vw;"> My work experiences:</p>
+<ul>
+  <li>Cashier at Zara | Haifa </li>
+  <li>Cashier at Fox Home </li>
 </ul>
 
-<p>A list of my hobbies:</p>
+<p style="font-size:5vw;">A list of my hobbies:</p>
 <ul> 
  <li>Playing sports(tennis,basketball)</li>
      <li>Travelling</li>
