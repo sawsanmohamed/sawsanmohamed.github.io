@@ -21,7 +21,7 @@ div.example {
 </style>
 </head>
 <body>
-<p class="c">
+<p style="font-size:2vw;" class="c">
   <a >
     <button type="button" onclick="myFunction2()">“Print Sawsan’s Resume“</button>
     </a>
