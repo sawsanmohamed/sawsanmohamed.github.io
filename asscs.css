@@ -1,4 +1,4 @@
-.b {
+.cont {
     display: block;
     border-width: initial;
     border-style: none;
@@ -6,21 +6,18 @@
     border-image: initial;
 }
 
-.b .post {
+.cont .post {
     font-size: 15px;
     border-bottom: 1px solid black !important;
     padding-bottom: 0.5%;
 }
 
-.b .post span {
-    background-color:red;
+.cont .post {
     position: relative;
     top: 13px;
     left: 12px;
     padding: 0 0;
 }
 
-.fh {
-    padding-left: 1%;
-}
+
 

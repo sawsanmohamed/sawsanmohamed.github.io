@@ -1,49 +1,50 @@
 function Validation() {
     var a = document.forms["Formfrom"]["fname"].value;
     if (a == "") {
-        alert(" must be filled out");
+        alert("First Name must be filled out");
         return false;
     }
     var b = document.forms["Formfrom"]["lname"].value;
     if (b == "") {
-        alert(" must be filled out");
+        alert(" Last Name must be filled out");
         return false;
     }
     var c = document.forms["Formfrom"]["email"].value;
     if (c == "") {
-        alert(" must be filled out");
+        alert(" Your Email must be filled out");
         return false;
     }
     var d = document.forms["Formfrom"]["phone"].value;
     if (d == "") {
-        alert(" must be filled out");
+        alert(" Your # phone must be filled out");
         return false;
     
     }
     var e = document.forms["Formfrom"]["user"].value;
     if (e == "") {
-        alert(" must be filled out");
+        alert("Your username must be filled out");
         return false;
     }
     
     var f = document.forms["Formfrom"]["password"].value;
     if (f == "") {
-        alert(" must be filled out");
+        alert("yYour password must be filled out");
         return false;
     }
 
     return (true);
 }
 
-function save() {
+function saved() {
     var c = document.forms["Formfrom"]["answeremail"].value;
     if (c == "") {
-        alert("Email must be filled out");
+        alert("Your Email must be filled out");
         return false;
     }
     username = c.split('@')[0];
     alert("The application of " + username + " is saved!");
 }
+
 
 function inOrder() {
     let input1 = document.getElementsByName("fname")
