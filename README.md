@@ -1,91 +1,75 @@
 <!DOCTYPE html>
-<html lang="en-US" >
+<html lang="en">
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title> Sawsan </title>
-<link rel="stylesheet"  type="text/css" href="style.css">
-<style>
 
-.c{
-  text-align: left; 
-}
-.responsive {
-  max-width: 100%;
-  height: auto;
-}
-div.example {
-  
-  padding: 20px;
-}
-
-</style>
+  <style>
+    /*   input:focus:valid  {
+      outline: none !important;
+      background-color: #ffffff;
+     }  */
+    /* input:not(:placeholder-shown) {
+      background-color: #ffffff;
+}*/
+  </style>
 </head>
+
 <body>
-<p style="font-size:2vw;" class="c">
-  <a >
-    <button type="button" onclick="myFunction2()">“Print Sawsan’s Resume“</button>
-    </a>
-</p>
-<div class="example">
+  <h2>Internship Application</h2>
 
-<h1 onclick="myFunction()" style="font-size:7vw;">Sawsan Mohamed Kabaha</h1>
 
-<p1 style="font-size:5vw;"> <br/> Bachelor of Science in Computer Science | An-Najah National University, Nablus
-2018–2022</p1>
+  <p>Please fill out the form below and hit submit to be considered for the internship</p>
+  <form action="/action_page.php" name="from" onsubmit="return required()" method="post">
+    <fieldset>
+      <legend>Personalia:</legend>
+      <label for="fname">First name:</label>
+      <input onchange="myFunction( )" name="answerfname" class="textarea" type="text" id="fname" name="fname"><br>
+      <label for="lname">Last name:</label>
+      <input onchange="myFunction( )" name="answerlname" class="textarea" type="text" id="lname" name="lname"><br>
+      <label for="url">Personal Website:</label>
+      <input  onchange="myFunction( )"name="answerurl" type="url" id="url" pattern="https://.*" size="30"><br>
+      <label for="phone">Enter your phone number:</label>
 
-<p style="font-size:5vw;">
-<a href="https://twitter.com/_sawsanmohamed">My Twitter </a>
-</p>
+      <input onchange="myFunction( )" name="answerphone" type="tel" id="phone" name="phone" placeholder="123-45-678"><br>
 
-<img  src="https://raw.githubusercontent.com/sawsanmohamed/sawsanmohamed.github.io/main/sawsan.jpg"
- alt="me" class="responsive" style= "max-width:100%; height:auto;">
-<div1 id="div1" >
-<p    style="font-size:5vw;"> My education background: </p>
-<ul>
-  <li>An-Najah National University | Nablus,
-  B.A in Computer Science | 2018-2022</li>
- <li> Bartaa high school | Computer Science </li>
-</ul>
-</div1>
-<p  id ="div2" style="font-size:5vw;" style="color:black;" onmouseover="htext()" onmouseout="stext()" > My work experiences:</p>
-<ul>
-  <li>Cashier at Zara | Haifa </li>
-  <li>Cashier at Fox Home </li>
-</ul>
+      <label for="email">Enter your email:</label>
 
-<p style="font-size:5vw;">A list of my hobbies:</p>
-<ul> 
- <li>Playing sports(tennis,basketball)</li>
-     <li>Travelling</li>
-     <li>Cooking</li>
-	 <li>horse riding</li>
-</ul>
-</div>
-<script>
-  function myFunction() {
-  window.alert('Welcome to Sawsan Mohamed site, please let me know if you have any questions');
-  }
-  </script>
+      <input  onchange="myFunction( )" name="answeremail" type="email" id="email" size="30">
+      <br>
+      Username: <input  onchange="myFunction( )"name="answeruser" type="text" name="user"><br>
+      Password: <input  onchange="myFunction( )"name="answerpassword" type="password" name="password"><br>
 
-<script>
-    function stext() {
-        var x = document.getElementById("div1");
-        var y = document.getElementById("div2");
-        x.style.color = 'black';
-        y.style.color = 'black';
-    }
-    function htext() {
-        var x = document.getElementById("div1");
-        var y = document.getElementById("div2");
-        x.style.color = 'green';
-        y.style.color = 'black';
-    }
-	function myFunction2() {
-    window.print();
-}
+    </fieldset>
 
-  </script>
-  
+    <form action="/action_page.php" method="post">
+      <fieldset>
+        <legend>Education</legend>
+        <label for="Degre">Degree:</label>
+        <input list="Degree" id="Degre"  onchange="myFunction( )"name="answerDegre" />
+        <datalist id="Degree">
+          <option value="Associate">
+          <option value="Bachelo">
+          <option value="Masters">
+          <option value="Ph.D.">
+          <option value="other">
+        </datalist>
+        <br>
+        <label for="graduate">When will you graduate:</label>
+        <input type="date" id="graduate" onchange="myFunction( )" name="answerGraduate">
+        <br>
+        <label for="files">Upload your CV and other documents:</label>
+        <input type="file" id="files"  onchange="myFunction( )"name="answerFiles" multiple><br><br>
 
+      </fieldset>
+      <center>
+        <button type="submit" value="Submit">Submit</button>
+        <button type="save" value="Save">Save</button>
+        <button type="reset" value="Reset">Reset</button>
+      </center>
+    </form>
+  </form>
+  </head>
+  <script src="jsfile.js"></script>
 </body>
+
 </html>
